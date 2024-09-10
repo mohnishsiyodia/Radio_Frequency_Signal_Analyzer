@@ -1,0 +1,78 @@
+﻿<Window x:Class="Radio_Frequency_Monitoring_App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Radio_Frequency_Monitoring_App.ViewModels"
+        mc:Ignorable="d"
+        Title="Signal Analyzer" Height="800" Width="1200">
+    <Window.DataContext>
+        <vm:SignalAnalyzer />
+    </Window.DataContext>
+    <DockPanel>
+        <!-- Menu Bar -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="Open..." />
+                <MenuItem Header="Save" />
+                <Separator />
+                <MenuItem Header="Exit" />
+            </MenuItem>
+            <MenuItem Header="_Settings">
+                <MenuItem Header="Preferences..." />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="About" />
+            </MenuItem>
+        </Menu>
+
+        <!-- Tool Bar -->
+        <ToolBar DockPanel.Dock="Top">
+            <Button Content="Start" Command="{Binding StartCommand}" />
+            <Button Content="Stop" Command="{Binding StopCommand}" />
+            <Button Content="Zoom In" />
+            <Button Content="Zoom Out" />
+        </ToolBar>
+
+        <!-- Status Bar -->
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="{Binding IsConnected, Converter={StaticResource BooleanToStatusConverter}}" />
+            <StatusBarItem Content="{Binding SamplingRate, StringFormat='Sampling Rate: {0} Hz'}" />
+        </StatusBar>
+
+        <!-- Main Content -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="300" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Signal Display Area -->
+            <Grid Background="Black" Margin="5" Grid.Column="0">
+                <!-- Signal visualization goes here -->
+                <TextBlock Text="Signal Display Area" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+
+            <!-- Control Panel -->
+            <StackPanel Grid.Column="1" Margin="5">
+                <GroupBox Header="Frequency Range">
+                    <StackPanel>
+                        <Label Content="Start Frequency (Hz):" />
+                        <TextBox Width="200" />
+                        <Label Content="Stop Frequency (Hz):" />
+                        <TextBox Width="200" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Amplitude">
+                    <StackPanel>
+                        <Label Content="Min Amplitude (dB):" />
+                        <TextBox Width="200" />
+                        <Label Content="Max Amplitude (dB):" />
+                        <TextBox Width="200" />
+                    </StackPanel>
+                </GroupBox>
+                <Button Content="Apply Settings" Command="{Binding ApplySettingsCommand}" Width="200" Margin="5"/>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

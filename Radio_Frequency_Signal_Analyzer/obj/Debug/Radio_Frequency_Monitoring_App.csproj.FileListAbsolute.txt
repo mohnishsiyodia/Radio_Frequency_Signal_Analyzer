@@ -1,0 +1,17 @@
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\bin\Debug\Alethea.exe.config
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\bin\Debug\Alethea.exe
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\bin\Debug\Alethea.pdb
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Radio_Frequency_Monitoring_App.csproj.AssemblyReference.cache
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Views\MainWindow.g.cs
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\App.g.cs
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea_MarkupCompile.cache
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea_MarkupCompile.lref
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\App.baml
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Views\MainWindow.baml
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea.g.resources
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea.Properties.Resources.resources
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Radio_Frequency_Monitoring_App.csproj.GenerateResource.cache
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Radio_Frequency_Monitoring_App.csproj.CoreCompileInputs.cache
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea.exe
+D:\RadioFrequency_WPF\Radio_Frequency_Signal_Analyzer\obj\Debug\Alethea.pdb
